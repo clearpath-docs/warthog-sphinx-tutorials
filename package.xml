@@ -4,11 +4,11 @@
   <version>0.0.1</version>
   <description>Warthog's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+  <author email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</author>
 
   <license>BSD</license>
 
   <url type="website">http://wiki.ros.org/Robots/Warthog</url>
-  <author email="mpurvis@clearpathrobotics.com">Mike Purvis</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rosdoc_lite</build_depend>
