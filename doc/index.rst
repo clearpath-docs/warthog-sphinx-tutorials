@@ -28,6 +28,7 @@ skip the introductory chapters and jump straight to these ones.
     :caption: Contents
 
     Overview <self>
+    WarthogInstallation
     WarthogSimulation
     WarthogDriving
     WarthogNetwork

@@ -8,16 +8,9 @@ Whether you actually have a Warthog robot or not, the Warthog simulator is a gre
 robot development. In this tutorial, we will go through the basics of starting Gazebo and Rviz and how to drive
 your Warthog around.
 
+.. note::
 
-Installation
-------------
-
-To get started with the Warthog simulation, make sure you have a :roswiki:`working ROS installation <ROS/Installation>`
-set up on your Ubuntu desktop, and install the Warthog-specific metapackages for desktop and simulation:
-
-.. substitution-code-block :: bash
-
-    sudo apt-get install ros-|ros_distro|-warthog-simulator ros-|ros_distro|-warthog-desktop
+  Before you can use this tutorial, make sure you have :doc:`installed Warthog's software <WarthogInstallation>`
 
 
 Launch Gazebo
@@ -34,7 +27,7 @@ Warthog in a simple example world, run the following command:
 You should see the following window appear, or something like it. You can adjust the camera angle by
 clicking and dragging while holding CTRL, ALT, or the shift key:
 
-.. image:: graphics/warthog_simulator_gazebo.png
+.. image:: graphics/placeholder.png
     :alt: Simulated Warthog in the Race World.
 
 The window which you are looking at is the Gazebo Client. This window shows you the "true" state of the
@@ -83,51 +76,3 @@ drive real Warthog using this method, it will have moved in the real world.
 Once you start your own development, have your nodes send ``geometry_msgs/Twist`` commands to the ``cmd_vel``
 topic to drive Warthog, either real or simulated. This is the standard ROS interface to differential-drive and
 holonomic ground vehicles.
-
-
-Non-Debian Systems
-------------------------
-
-If you cannot install the Warthog debian packages through the package manager, for example on an RPM-based Linux
-distribution, or you need the ability to modify the simulation, you can create a catkin workspace and clone the
-packages directly from github.  The following assumes  you have already installed ROS and catkin on your system.
-
-First create a workspace directory and initialize it:
-
-.. code-block:: bash
-
-    mkdir ~/warthog_ws
-    cd ~/warthog_ws
-    mkdir src
-    catkin_init_workspace src
-
-Next clone the Warthog repositories using git:
-
-.. code-block:: bash
-
-    cd ~/warthog_ws/src
-    git clone https://github.com/warthog-cpr/warthog.git
-    git clone https://github.com/warthog-cpr/warthog_simulator.git
-    git clone https://github.com/warthog-cpr/warthog_desktop.git
-
-Now install additional ROS dependencies:
-
-.. code-block:: bash
-
-    cd ~/warthog_ws
-    rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-
-Finally build the workspace:
-
-.. code-block:: bash
-
-    cd ~/warthog_ws
-    catkin_make
-
-You can now source your workspace's packages and run the simulation:
-
-.. code-block:: bash
-
-    cd ~/warthog_ws
-    source devel/setup.bash
-    roslaunch warthog_gazebo warthog_world.launch
