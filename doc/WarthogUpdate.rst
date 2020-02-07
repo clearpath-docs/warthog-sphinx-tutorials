@@ -31,7 +31,7 @@ MCU Firmware Update
     Accessing Warthog's MCU requires access to several hard-to-get-to parts of the robot.  Unless absolutely
     necessary, we do not recommend re-flashing the robot's MCU firmware.
 
-You need to use an external PC to update Warthog's firmware.  You cannot use Warthog's internal PC, as installing the
+You need to use an external PC to update Warthog's MCU firmware.  You cannot use Warthog's internal PC, as installing the
 firmware requires power-cycling the MCU.  Warthog's MCU controls the power supply to the internal PC.  These instructions
 assume the external PC is running some flavour of Linux with access to Clearpath's ROS packages.
 
@@ -78,8 +78,7 @@ and buttons.
 
     sudo chmod 666 /dev/bus/usb/001/005
 
-Now mount the same USB drive from step 3 and run the following command, replacing the path with the mount point of
-the drive:
+Now run the following command to upload the firmware:
 
 .. substitution-code-block:: bash
 
