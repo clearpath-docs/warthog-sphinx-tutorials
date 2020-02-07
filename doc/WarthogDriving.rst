@@ -93,3 +93,16 @@ Headlights & Taillights   The front lights are solid white, rear lights are soli
 
 .. image:: graphics/warthog_taillights.png
    :alt: Warthog's taillight
+
+
+Pinch Points
+-------------------
+
+Warthog's chassis has articulated suspension.  Do not place fingers, or anything else, anywhere along the suspension
+link, as it can result in injury.
+
+.. image:: graphics/pinch_points.jpg
+    :alt: Warthog's pinch points
+
+If you need to access the area around the suspension link for maintenance purposes, place the robot securely on
+blocks and engage the emergency-stop to prevent the robot from moving.
