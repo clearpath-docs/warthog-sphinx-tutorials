@@ -55,6 +55,9 @@ Follow the below procedure to flash the firmware to Warthog's MCU:
 4. Warthog's MCU is located on the underside of the metal frame over the top of the PC.  To access it you will need to
    disconnect all cables from the breakout on the sloped portion on the left and then undo 4 screws anchoring the frame:
 
+.. image:: graphics/warthog_inside.jpg
+   :alt: The inside of Warthog's computer box
+
 .. image:: graphics/screws_left.jpg
    :alt: Screws on the left
 
