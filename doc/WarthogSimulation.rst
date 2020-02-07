@@ -27,7 +27,7 @@ Warthog in a simple example world, run the following command:
 You should see the following window appear, or something like it. You can adjust the camera angle by
 clicking and dragging while holding CTRL, ALT, or the shift key:
 
-.. image:: graphics/placeholder.png
+.. image:: graphics/warthog_gazebo.png
     :alt: Simulated Warthog in the Race World.
 
 The window which you are looking at is the Gazebo Client. This window shows you the "true" state of the
@@ -55,7 +55,7 @@ visualizing any standard Warthog config:
 You should see rviz appear:
 
 .. image:: graphics/warthog_rviz.png
-    :alt: Warthog with laser scanner in rviz.
+    :alt: Warthog in rviz.
 
 The rviz display only shows what the robot knows about its world, which presently, is nothing. Because the
 robot doesn't yet know about the barriers which exist in its Gazebo world, they're not shown here.
