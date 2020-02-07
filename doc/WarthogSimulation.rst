@@ -73,6 +73,39 @@ Warthog moving relative to its odometric frame, but it is also moving relative t
 Gazebo. If you click over to the Gazebo window, you will see Warthog moving within its simulated world. Or, if you
 drive real Warthog using this method, it will have moved in the real world.
 
+All of Clearpath's robots use the same coordinate system, shown below:
+
+.. image:: graphics/coords.png
+
+===================== ============================= ===================
+Axis                  Positive Meaning              Negative Meaning
+===================== ============================= ===================
+X                     Linear motion forwards        Linear motion backwards
+Y                     Linear motion left            Linear motion right
+Z                     Linear motion up              Linear motion down
+X^ (roll)             Roll to the right             Roll to the left
+Y^ (pitch)            Pitch down                    Pitch up
+Z^ (yaw)              Rotate left                   Rotate right
+===================== ============================= ===================
+
+Husky, in its default configuration, will treat the linear Y & Z axes, as well a the angular X & Y axes, as zero
+at all times; the robot is incapable of moving in these directions.
+
 Once you start your own development, have your nodes send ``geometry_msgs/Twist`` commands to the ``cmd_vel``
 topic to drive Warthog, either real or simulated. This is the standard ROS interface to differential-drive and
 holonomic ground vehicles.
+
+The ``geometry_msgs/Twist`` message includes fields for linear X/Y/Z in m/s, as well as fields for angular X/Y/Z
+in rad/s.
+
+.. code-block:: bash
+
+    $ rosmsg info geometry_msgs/Twist
+    geometry_msgs/Vector3 linear
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 angular
+      float64 x
+      float64 y
+      float64 z
