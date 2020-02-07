@@ -28,47 +28,48 @@ MCU Firmware Update
 
 .. warning::
 
-    This section is currently just a search-replace of the Moose docs; the instructions themselves have not been
-    rewritten yet!
+    Accessing Warthog's MCU requires access to several hard-to-get-to parts of the robot.  Unless absolutely
+    necessary, we do not recommend re-flashing the robot's MCU firmware.
 
 You need to use an external PC to update Warthog's firmware.  You cannot use Warthog's internal PC, as installing the
 firmware requires power-cycling the MCU.  Warthog's MCU controls the power supply to the internal PC.  These instructions
-assume the external PC is running some flavour of Linux with the firmware's .bin file downloaded to it.
+assume the external PC is running some flavour of Linux with access to Clearpath's ROS packages.
 
-When you update packages, there is periodically a new version of Warthog's firmware available. You will know this
-is the case in one of two ways:
-
-1. The firmware and PC are unable to connect to each other, which will be apparent if Warthog's heartbeat LED does not flash
-   continuously while the robot is powered on; or
-2. If the firmware version number in the ``/status`` message does not match the package version output by
-   |dpkg_s_firmware|. In the future there will be an automated check for this which outputs
-   a diagnostics warning when a firmware update is available to be applied.
-
-If new firmware is available, follow the below procedure to flash it to Warthog's MCU:
+Follow the below procedure to flash the firmware to Warthog's MCU:
 
 1. Place Warthog up on blocks and/or engage the emergency stop by pressing one of the red buttons located on each corner
    of the robot. Firmware loading does not usually result in unintended motion, but it's safest to ensure the robot
    cannot move accidentally.
-2. Open Warthog's computer box, located on the rear of the robot
-
-.. image:: graphics/placeholder.png
-    :alt: The inside of Warthog's computer box
-
-3. Insert a USB drive into Warthog's PC, mount it, and run the following command to copy the firmware, replacing
-   the path with the location you mounted the USB drive to:
+2. Download the Warthog firmware package onto your PC:
 
 .. substitution-code-block:: bash
 
-    cp |fw_path| /path/to/usb/drive
+    sudo apt-get install ros-|ros_distro|-warthog-firmware
 
-Unmount and remove the USB drive when the command completes
+3. Remove the top panel from the Warthog.  We recommend opening the panel to the left, as there are cables that run
+   into the lid which can be strained.
 
-4. While pressing ``BT0`` on the MCU, connect the external PC to Warthog's MCU using a USB cable.
+.. image:: graphics/warthog_inside_lid.jpg
+    :alt: The inside of Warthog's computer box
 
-.. image:: graphics/placeholder.png
+4. Warthog's MCU is located on the underside of the metal frame over the top of the PC.  To access it you will need to
+   disconnect all cables from the breakout on the sloped portion on the left and then undo 4 screws anchoring the frame:
+
+.. image:: graphics/screws_left.jpg
+   :alt: Screws on the left
+
+.. image:: graphics/screws_right.jpg
+   :alt: Screws on the right
+
+Once the screws are removed, carefully lift the center panel and turn it over to expose the MCU's micro USB port
+and buttons.
+
+5. While pressing ``BT0`` on the MCU, connect the external PC to Warthog's MCU using a USB cable.
+
+.. image:: graphics/mcu_buttons.jpg
     :alt: Warthog's MUC's buttons
 
-5. After connecting the PC you should see a device with a name similar to
+6. After connecting the PC you should see a device with a name similar to
    ``Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`` in the output of ``lsusb``.  Run the
    following command, replacing ``001/005`` with the value appropriate to the Bus and Device where Warthog's MCU is
    connected:
@@ -80,9 +81,9 @@ Unmount and remove the USB drive when the command completes
 Now mount the same USB drive from step 3 and run the following command, replacing the path with the mount point of
 the drive:
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
-    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /path/to/usb/drive/mcu.bin
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/|ros_distro|/share/warthog_firmware/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
 complete you may disconnect the PC from the MCU and power-cycle the robot.
@@ -93,11 +94,12 @@ complete you may disconnect the PC from the MCU and power-cycle the robot.
 Starting From Scratch
 ---------------------
 
-If Warthog's computer has become inoperable, or for any reason you want to restore it to the factory state, begin
-by opening Warthog's computer box, located on the rear of the robot.  The PC is easily accessible with USB, network,
-and video ports available.
+If Warthog's computer has become inoperable, or for any reason you want to restore it to the factory state, you can
+reinstall the operating system to the PC.  Warthog includes USB and ethernet breakouts located on the rear of the robot
+for easy access.  However, to connect a monitor to the PC you will need to open up Warthog's body and access the
+HDMI port located on the sloped portion of the center frame.
 
-.. image:: graphics/placeholder.png
+.. image:: graphics/hdmi_breakout.jpg
     :alt: Warthog's PC.
 
 1. Download the latest operating system image for Warthog from http://packages.clearpathrobotics.com/stable/images/latest/
