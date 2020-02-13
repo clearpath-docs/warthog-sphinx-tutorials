@@ -36,6 +36,10 @@ is doing the heavy lifting of actually maintaining the simulated world. At the m
 both the client and server locally on your own machine, but some advanced users may choose to run heavy
 duty simulations on separate hardware and connect to them over the network.
 
+.. note::
+
+    When simulating Warthog, you must leave Gazebo running.  Closing Gazebo will prevent other tools, such as
+    rviz (see below) from working correctly.
 
 Launch rviz
 -----------
