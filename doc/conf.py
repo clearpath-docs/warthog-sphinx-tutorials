@@ -44,19 +44,19 @@ html_sidebars = {
 
 # global substitutions -- THESE ONLY WORK OUTSIDE OTHER MARKUP (i.e. ``/opt/ros/|ros_distro|/`` won't work!)
 rst_prolog = """
-.. |ubuntu_distro| replace:: xenial
-.. |ubuntu_version| replace:: 16.04
-.. |ros_distro| replace:: kinetic
-.. |ros_path| replace:: ``/opt/ros/kinetic``
-.. |rosd_path| replace:: ``/etc/ros/kinetic/ros.d``
-.. |dpkg_s_firmware| replace:: ``dpkg -s ros-kinetic-warthog-firmware``
+.. |ubuntu_distro| replace:: bionic
+.. |ubuntu_version| replace:: 18.04
+.. |ros_distro| replace:: melodic
+.. |ros_path| replace:: ``/opt/ros/melodic``
+.. |rosd_path| replace:: ``/etc/ros/melodic/ros.d``
+.. |dpkg_s_firmware| replace:: ``dpkg -s ros-melodic-warthog-firmware``
 """
 
 # substitutions for substitution-code-block -- THESE ONLY WORK IN CODE BLOCKS
 substitutions = [
-    ('|ros_distro|', 'kinetic'),
-    ('|ubuntu_distro|', 'xenial'),
-    ('|fw_path|', '/opt/ros/kinetic/share/warthog_firmware/mcu.bin'),
+    ('|ros_distro|', 'melodic'),
+    ('|ubuntu_distro|', 'bionic'),
+    ('|fw_path|', '/opt/ros/melodic/share/warthog_firmware/mcu.bin'),
 ]
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
