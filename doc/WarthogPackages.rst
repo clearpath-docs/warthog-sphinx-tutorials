@@ -29,27 +29,27 @@ Warthog has a suite of optional payloads called accessories. These payloads can 
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_ARM_MOUNT</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>If enabled, a link called "arm_mount_link" will be created on the bulkhead</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_BULKHEAD</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Switch for enabling a large, rigid bulkhead on the front of the warthog for mount accessories like arms</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_IMU_RPY</tt> </p></td>
       <td><p><tt>0 0 0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Compound rotations in radians of the IMU</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_IMU_XYX</tt> </p></td>
       <td><p><tt>0 0 0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Position of the IMU in meters</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_JOY_TELEOP</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Switch to enable teleop control of the platform</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_NAVSAT_SMART6</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is the platform equipped with a Smart7 GPS?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_NAVSAT_SMART6_BAUD</tt> </p></td>
       <td><p><tt>57600</tt> </p></td>
@@ -61,7 +61,7 @@ Warthog has a suite of optional payloads called accessories. These payloads can 
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_NAVSAT_SMART6_OFFSET</tt> </p></td>
       <td><p><tt>0 0 0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Position of the Smart 6 GPS in meters</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_NAVSAT_SMART6_PORT</tt> </p></td>
       <td><p><tt>/dev/ttyS1</tt> </p></td>
@@ -69,15 +69,11 @@ Warthog has a suite of optional payloads called accessories. These payloads can 
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_NAVSAT_SMART6_RPY</tt> </p></td>
       <td><p><tt>0 0 0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Compound rotations in radians of the Smart 6 GPS</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_OFFBOARD_STOP</tt> </p></td>
       <td><p><tt>false</tt> </p></td>
-      <td><p>??? TODO</p></td>
-    </tr>
-    <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_RC_TELEOP</tt> </p></td>
-      <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Is a remote e-stop setup on the platform?</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_TRACKS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
@@ -85,7 +81,7 @@ Warthog has a suite of optional payloads called accessories. These payloads can 
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_TWIST_MUX_EXTRAS</tt> </p></td>
       <td><p><tt>0</tt> </p></td>
-      <td><p>??? TODO</p></td>
+      <td><p>Add additional sources to be controlled by the twise mux of the platform</p></td>
     </tr>
     <tr>  <td><span class="anchor" id="line-11"></span><p><tt>WARTHOG_URDF_EXTRAS</tt> </p></td>
       <td><p><tt>empty.urdf</tt> </p></td>
