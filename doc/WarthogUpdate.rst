@@ -42,9 +42,9 @@ Follow the below procedure to flash the firmware to Warthog's MCU:
    cannot move accidentally.
 2. Download the Warthog firmware package onto your PC:
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
-    sudo apt-get install ros-|ros_distro|-warthog-firmware
+    sudo apt-get install ros-melodic-warthog-firmware
 
 3. Remove the top panel from the Warthog.  We recommend opening the panel to the left, as there are cables that run
    into the lid which can be strained.
@@ -83,9 +83,9 @@ and buttons.
 
 Now run the following command to upload the firmware:
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
-    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/|ros_distro|/share/warthog_firmware/mcu.bin
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/melodic/share/warthog_firmware/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
 complete you may disconnect the PC from the MCU and power-cycle the robot.

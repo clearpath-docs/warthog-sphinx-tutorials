@@ -38,9 +38,9 @@ Installing the Packages
 Now that your computer is configured to use Clearpath's deb repository, you can install the Warthog packages needed
 for this tutorial by running the following command:
 
-.. substitution-code-block :: bash
+.. code-block :: bash
 
-    sudo apt-get install ros-|ros_distro|-warthog-desktop
+    sudo apt-get install ros-melodic-warthog-desktop
 
 
 Installing from Source

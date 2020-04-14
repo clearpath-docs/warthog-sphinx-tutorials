@@ -14,9 +14,9 @@ set up important environment variables such as ``PATH``, ``PYTHONPATH``, and ``C
 
 The standard system-wide setup file is in ``opt``:
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
-    source /opt/ros/|ros_distro|/setup.bash
+    source /opt/ros/melodic/setup.bash
 
 When you run this command, you'll have access to `rosrun`, `roslaunch`, and all the other tools and packages
 installed on your system from debian packages.
@@ -39,12 +39,12 @@ modification points for altering how Warthog launches.
 Launch Files
 ------------
 
-The second major modification point is the |rosd_path| directory. This location contains the
+The second major modification point is the ``/etc/ros/melodic/ros.d`` directory. This location contains the
 launch files associated with the ``ros`` background job. If you add launch files here, they will be launched with
 Warthog's startup.
 
 However, it's important to note that in the default configuration, any launch files you add may only reference ROS
-software installed in |ros_path|. If you want to launch something from workspace in
+software installed in ``/opt/ros/melodic``. If you want to launch something from workspace in
 the home directory, you must change ``/etc/ros/setup.bash`` to source that workspace's setup file rather than the
 one from ``opt``.
 
