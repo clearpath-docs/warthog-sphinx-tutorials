@@ -10,9 +10,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
     'sphinx.ext.doctest',
-    'sphinx.ext.viewcode',
-    'sphinx-prompt',
-    'sphinx_substitution_extensions'
+    'sphinx.ext.viewcode'
 ]
 
 extlinks = {
@@ -41,23 +39,6 @@ html_static_path = ['./theme/static']
 html_sidebars = {
    '**': ['sidebartoc.html', 'sourcelink.html', 'searchbox.html']
 }
-
-# global substitutions -- THESE ONLY WORK OUTSIDE OTHER MARKUP (i.e. ``/opt/ros/|ros_distro|/`` won't work!)
-rst_prolog = """
-.. |ubuntu_distro| replace:: xenial
-.. |ubuntu_version| replace:: 16.04
-.. |ros_distro| replace:: kinetic
-.. |ros_path| replace:: ``/opt/ros/kinetic``
-.. |rosd_path| replace:: ``/etc/ros/kinetic/ros.d``
-.. |dpkg_s_firmware| replace:: ``dpkg -s ros-kinetic-warthog-firmware``
-"""
-
-# substitutions for substitution-code-block -- THESE ONLY WORK IN CODE BLOCKS
-substitutions = [
-    ('|ros_distro|', 'kinetic'),
-    ('|ubuntu_distro|', 'xenial'),
-    ('|fw_path|', '/opt/ros/kinetic/share/warthog_firmware/mcu.bin'),
-]
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False
