@@ -45,3 +45,4 @@ skip the introductory chapters and jump straight to these ones.
     :caption: Warthog Packages
 
     WarthogPackages
+    additional_sim_worlds
