@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>warthog_tutorials</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>Warthog's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
   <author email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</author>
