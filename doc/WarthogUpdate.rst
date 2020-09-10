@@ -73,9 +73,16 @@ and buttons.
     :alt: Warthog's MUC's buttons
 
 6. After connecting the PC you should see a device with a name similar to
-   ``Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`` in the output of ``lsusb``.  Run the
-   following command, replacing ``001/005`` with the value appropriate to the Bus and Device where Warthog's MCU is
-   connected:
+   ``Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode`` in the output of ``lsusb``.
+
+.. note::
+
+    If the MCU does not show up as a DFU device in the output of ``lsusb`` after completing the above procedure, press
+    and hold BT0 on the MCU press the RST button while holding BT0 down.  This will reset the MCU and force it into DFU
+    mode.
+
+With the MCU in DFU mode, run the following command, replacing ``001/005`` with the value appropriate to the Bus and
+Device where Warthog's MCU is connected:
 
 .. code-block:: bash
 
