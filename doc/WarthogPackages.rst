@@ -94,11 +94,11 @@ Configurations
 
 As an alternative to individually specifying each accessory, some fixed configurations are provided in the package. These can be specified using the ``config arg to description.launch``, and are intended especially as a convenience for simulation launch.
 
-====================================  ====================================================
+====================================  =========================================================
 Config:                               Description:
-====================================  ====================================================
+====================================  =========================================================
 base                                  Base Warthog, includes IMU and GPS
 arm_mount                             Includes mounting points for am arm payload
-bulkhead                              ??? TODO
+bulkhead                              Includes a mounting point for additional payload options
 empty                                 Includes no accessories at all
-====================================  ====================================================
+====================================  =========================================================
