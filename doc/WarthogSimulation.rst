@@ -92,7 +92,7 @@ Y^ (pitch)            Pitch down                    Pitch up
 Z^ (yaw)              Rotate left                   Rotate right
 ===================== ============================= ===================
 
-Husky, in its default configuration, will treat the linear Y & Z axes, as well a the angular X & Y axes, as zero
+Warthog, in its default configuration, will treat the linear Y & Z axes, as well a the angular X & Y axes, as zero
 at all times; the robot is incapable of moving in these directions.
 
 Once you start your own development, have your nodes send ``geometry_msgs/Twist`` commands to the ``cmd_vel``
@@ -113,3 +113,21 @@ in rad/s.
       float64 x
       float64 y
       float64 z
+
+
+Using a Game Controller
+-------------------------
+
+You can use a game controller, e.g. a PS4 or Xbox One bluetooth controller, to drive Warthog in the simulation.
+
+To do so, first pair your controller with your PC.  Once paired, your controller should appear on your system as
+``/dev/input/js*`` where ``*`` is a number starting at zero.  Make a note of what joy device your controller mapped
+to, and run the following commands, substituting ``js0`` as appropriate:
+
+.. code-block:: bash
+
+  export WARTHOG_JOY_TELEOP=1
+  export WARTHOG_JOY_DEV=/dev/input/js0
+
+Then launch Gazebo as described earlier.  You should be able to drive Warthog by holding the left shoulder button and
+moving the left thumb stick.
