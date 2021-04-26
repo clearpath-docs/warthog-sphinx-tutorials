@@ -48,10 +48,9 @@ Warthog includes a remote emergency-stop ("e-stop"), which looks like this:
 
 To operate the e-stop:
 
-# Twist the red button in the direction indicated by the arrows to take it out of the
-stopped state
-# Press and hold the green START button until the battery LED indicator turns green
-# Press the button labelled "RELEASE" with 3 seconds, followed by the START button again
+#. Twist the red button in the direction indicated by the arrows to take it out of the stopped state
+#. Press and hold the green START button until the battery LED indicator turns green
+#. Press the button labelled "RELEASE" with 3 seconds, followed by the START button again
 
 The battery LED should now rapidly blink green, indicating that is is paired with the receiver on the robot.  To
 disengage the stop, press START once again.
