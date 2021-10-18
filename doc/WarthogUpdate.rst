@@ -113,7 +113,7 @@ HDMI port located on the sloped portion of the center frame.
 .. image:: graphics/hdmi_breakout.jpg
     :alt: Warthog's PC.
 
-1. Download the latest operating system image for Warthog from https://packages.clearpathrobotics.com/stable/images/latest/
+1. Download the latest operating system image for Warthog from https://packages.clearpathrobotics.com/stable/images/latest/kinetic-xenial/
 2. Use unetbootin__ or rufus__ (Windows only) to write the ISO image to a USB memory stick
 
 .. _unetbootin: https://unetbootin.github.io/linux_download.html
