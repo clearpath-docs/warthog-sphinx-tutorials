@@ -1,9 +1,8 @@
 Warthog UGV Tutorials
 ======================
 
-.. image:: graphics/warthog_banner.png
+.. image:: images/warthog_banner.png
     :alt: Warthog Robot
-
 
 This package supplies Sphinx-based tutorial content to assist you with setting up and operating your Warthog_
 mobile robot. The tutorials topics are listed in the left column, and presented in the suggested reading order.

@@ -71,7 +71,7 @@ Inspection World is a hilly, outdoor world that includes a water feature, bridge
 and a small solar farm.  It is intended to simulate a variety of missions, including pipeline inspection,
 cave/underground navigation, and localization on non-planar terrain.
 
-.. image:: graphics/warthog_inspection_bridge.png
+.. image:: images/warthog_inspection_bridge.png
   :alt: Warthog driving over the bridge in the inspection world
 
 To launch the inspection simulation, run
@@ -85,17 +85,17 @@ To customize Warthog's payload, for example to add additional sensors, see :ref:
 Once the simulation is running you can use rviz and other tools as described in :doc:`WarthogSimulation`
 to control and monitor the robot.  For example, below we can see Warthog exploring the cave:
 
-.. image:: graphics/warthog_inspection_cave.png
+.. image:: images/warthog_inspection_cave.png
   :alt: Warthog exploring the cave
 
 and Warthog's perception of the inside of the cave as a 3D pointcloud in rviz:
 
-.. image:: graphics/warthog_rviz_inspection_cave.png
+.. image:: images/warthog_rviz_inspection_cave.png
   :alt: Warthog in rviz exploring the cave
 
 You can see the complete layout of the Inspection World below:
 
-.. image:: graphics/inspection_world.png
+.. image:: images/inspection_world.png
   :alt: Inspection World
 
 Running the Agriculture Simulation
@@ -104,7 +104,7 @@ Running the Agriculture Simulation
 Agriculture World is a flat, mixed indoor/outdoor world that include a large barn, open fields surrounded by fences,
 and a large solar farm.  It is intended to simulate missions such as solar panel inspection and area coverage.
 
-.. image:: graphics/warthog_agriculture_world.png
+.. image:: images/warthog_agriculture_world.png
   :alt: Warthog in the agriculture world
 
 To launch the agriculture simulation, run
@@ -118,7 +118,7 @@ To customize Warthog's payload, for example to add additional sensors, see :ref:
 Once the simulation is running you can use rviz and other tools as described in :doc:`WarthogSimulation`
 to control and monitor the robot.
 
-.. image:: graphics/agriculture_world.png
+.. image:: images/agriculture_world.png
   :alt: Agriculture World
 
 
@@ -244,7 +244,7 @@ Now, set the ``WARTHOG_URDF_EXTRAS`` environment variable and try viewing the Wa
 
 You should see the Warthog model in rviz, with the RealSense camera mounted to it:
 
-.. image:: graphics/warthog_realsense.png
+.. image:: images/warthog_realsense.png
   :alt: Warthog with a RealSense D435 connected to it
 
 To launch the customized Warthog in any of the new simulation environments, similarly run:
@@ -256,7 +256,7 @@ To launch the customized Warthog in any of the new simulation environments, simi
 
 You should see Warthog spawn in the office world with the RealSense camera:
 
-.. image:: graphics/warthog_inspection_cave.png
+.. image:: images/warthog_inspection_cave.png
 
 You can view the sensor data from the RealSense camera by running
 
@@ -266,5 +266,5 @@ You can view the sensor data from the RealSense camera by running
 
 and adding the camera & pointcloud from the ``/realsense/color/image_raw`` and ``/realsense/depth/color/points`` topics:
 
-.. image:: graphics/warthog_rviz_inspection_cave.png
+.. image:: images/warthog_rviz_inspection_cave.png
   :alt: Warthog with a RealSense in rviz showing pointcloud data

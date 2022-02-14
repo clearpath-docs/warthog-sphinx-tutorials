@@ -1,7 +1,7 @@
 Simulating Warthog
 ====================
 
-.. image:: graphics/warthog_simulation_banner.png
+.. image:: images/warthog_simulation_banner.png
     :alt: Warthog Simulation
 
 Whether you actually have a Warthog robot or not, the Warthog simulator is a great way to get started with ROS
@@ -27,7 +27,7 @@ Warthog in a simple example world, run the following command:
 You should see the following window appear, or something like it. You can adjust the camera angle by
 clicking and dragging while holding CTRL, ALT, or the shift key:
 
-.. image:: graphics/warthog_gazebo.png
+.. image:: images/warthog_gazebo.png
     :alt: Simulated Warthog in the Race World.
 
 The window which you are looking at is the Gazebo Client. This window shows you the "true" state of the
@@ -58,7 +58,7 @@ visualizing any standard Warthog config:
 
 You should see rviz appear:
 
-.. image:: graphics/warthog_rviz.png
+.. image:: images/warthog_rviz.png
     :alt: Warthog in rviz.
 
 The rviz display only shows what the robot knows about its world, which presently, is nothing. Because the
@@ -79,7 +79,7 @@ drive real Warthog using this method, it will have moved in the real world.
 
 All of Clearpath's robots use the same coordinate system, shown below:
 
-.. image:: graphics/coords.png
+.. image:: images/coords.png
 
 ===================== ============================= ===================
 Axis                  Positive Meaning              Negative Meaning
