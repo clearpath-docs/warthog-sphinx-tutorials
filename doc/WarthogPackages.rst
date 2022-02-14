@@ -1,7 +1,7 @@
 Configuration & Environment Variables
 =========================================
 
-.. image:: graphics/warthog_urdf_banner.png
+.. image:: images/warthog_urdf_banner.png
     :alt: Warthog URDF
 
 The warthog_description package is the URDF robot description for Warthog UGV.

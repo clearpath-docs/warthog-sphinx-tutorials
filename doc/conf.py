@@ -45,12 +45,12 @@ html_show_sphinx = False
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'graphics/clearpathlogo.png'
+html_logo = 'images/clearpathlogo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = 'graphics/favicon.ico'
+html_favicon = 'images/favicon.ico'
 
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = "xelatex"

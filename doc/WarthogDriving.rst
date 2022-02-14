@@ -1,7 +1,7 @@
 Driving Warthog
 =================
 
-.. image:: graphics/warthog_driving_banner.png
+.. image:: images/warthog_driving_banner.png
     :alt: Warthog Driving
 
 Warthog can either drive autonomously, be :doc:`controlled through ROS messages <WarthogSimulation>`, or you
@@ -29,7 +29,7 @@ the power switch to the ON position, as indicated in the image below:
     The speed adjustment knob in the upper-left should be turned completely counterclockwise while familiarizing
     yourself with the operation of the remote.  Turn the knob slowly clockwise to get the robot moving.
 
-.. image:: graphics/futaba.png
+.. image:: images/futaba.png
    :alt: Warthog's remote control
 
 To drive the robot, the spring-loaded deadman switch in the upper-right corner must be held down.  Releasing this
@@ -43,7 +43,7 @@ E-Stop Remote
 
 Warthog includes a remote emergency-stop ("e-stop"), which looks like this:
 
-.. image:: graphics/wireless-stop-remote.png
+.. image:: images/wireless-stop-remote.png
    :alt: Warthog's e-stop remote
 
 To operate the e-stop:
@@ -90,7 +90,7 @@ Flashing Yellow           Motor drivers are initializing.  There is a short init
 Headlights & Taillights   The front lights are solid white, rear lights are solid red.  This indicates the robot is in normal operation.  NOTE: only in this state can the lights be overridden by autonomy or other software.
 =======================   ========================================================================================================================================================================
 
-.. image:: graphics/warthog_taillights.png
+.. image:: images/warthog_taillights.png
    :alt: Warthog's taillight
 
 
@@ -100,7 +100,7 @@ Pinch Points
 Warthog's chassis has articulated suspension.  Do not place fingers, or anything else, anywhere along the suspension
 link, as it can result in injury.
 
-.. image:: graphics/pinch_points.jpg
+.. image:: images/pinch_points.jpg
     :alt: Warthog's pinch points
 
 If you need to access the area around the suspension link for maintenance purposes, place the robot securely on

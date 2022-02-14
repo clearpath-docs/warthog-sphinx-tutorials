@@ -51,19 +51,19 @@ Follow the below procedure to flash the firmware to Warthog's MCU:
 3. Remove the top panel from the Warthog.  We recommend opening the panel to the left, as there are cables that run
    into the lid which can be strained.
 
-.. image:: graphics/warthog_inside_lid.jpg
+.. image:: images/warthog_inside_lid.jpg
     :alt: The inside of Warthog's computer box
 
 4. Warthog's MCU is located on the underside of the metal frame over the top of the PC.  To access it you will need to
    disconnect all cables from the breakout on the sloped portion on the left and then undo 4 screws anchoring the frame:
 
-.. image:: graphics/warthog_inside.jpg
+.. image:: images/warthog_inside.jpg
    :alt: The inside of Warthog's computer box
 
-.. image:: graphics/screws_left.jpg
+.. image:: images/screws_left.jpg
    :alt: Screws on the left
 
-.. image:: graphics/screws_right.jpg
+.. image:: images/screws_right.jpg
    :alt: Screws on the right
 
 Once the screws are removed, carefully lift the center panel and turn it over to expose the MCU's micro USB port
@@ -71,7 +71,7 @@ and buttons.
 
 5. While pressing ``BT0`` on the MCU, connect the external PC to Warthog's MCU using a USB cable.
 
-.. image:: graphics/mcu_buttons.jpg
+.. image:: images/mcu_buttons.jpg
     :alt: Warthog's MUC's buttons
 
 6. After connecting the PC you should see a device with a name similar to
@@ -110,7 +110,7 @@ reinstall the operating system to the PC.  Warthog includes USB and ethernet bre
 for easy access.  However, to connect a monitor to the PC you will need to open up Warthog's body and access the
 HDMI port located on the sloped portion of the center frame.
 
-.. image:: graphics/hdmi_breakout.jpg
+.. image:: images/hdmi_breakout.jpg
     :alt: Warthog's PC.
 
 1. Download the latest operating system image for Warthog from https://packages.clearpathrobotics.com/stable/images/latest/
@@ -122,7 +122,7 @@ __ unetbootin_
 .. _rufus: https://rufus.ie/
 __ rufus_
 
-.. image:: graphics/unetbootin.png
+.. image:: images/unetbootin.png
     :alt: Unetbootin
 
 3. Connect Warthog's PC to the internet with an ethernet cable.  Also connect a monitor, mouse, and keyboard to the PC.
