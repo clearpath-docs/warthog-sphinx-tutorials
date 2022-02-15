@@ -4,7 +4,7 @@ Driving Warthog
 .. image:: images/warthog_driving_banner.png
     :alt: Warthog Driving
 
-Warthog can either drive autonomously, be :doc:`controlled through ROS messages <WarthogSimulation>`, or you
+Warthog can either drive autonomously, be :doc:`controlled through ROS messages <Simulating>`, or you
 can use the supplied remote control to teleoperate it.
 
 

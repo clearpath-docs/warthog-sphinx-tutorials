@@ -1,5 +1,5 @@
-Installing Warthog Software
-=============================
+Installing Software
+====================
 
 .. note::
 
@@ -40,7 +40,7 @@ for this tutorial by running the following command:
 
 .. code-block :: bash
 
-    sudo apt-get install ros-melodic-warthog-desktop
+    sudo apt-get install ros-noetic-warthog-desktop
 
 
 Installing from Source

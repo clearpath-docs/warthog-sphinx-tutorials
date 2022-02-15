@@ -1,5 +1,5 @@
 Additional Simulation Worlds
-================================
+=============================
 
 In addtion to the default ``warthog_world.launch`` file, ``warthog_gazebo`` contains three additional launch files:
 
@@ -82,7 +82,7 @@ To launch the inspection simulation, run
 
 To customize Warthog's payload, for example to add additional sensors, see :ref:`customizepayload`.
 
-Once the simulation is running you can use rviz and other tools as described in :doc:`WarthogSimulation`
+Once the simulation is running you can use rviz and other tools as described in :doc:`Simulating`
 to control and monitor the robot.  For example, below we can see Warthog exploring the cave:
 
 .. image:: images/warthog_inspection_cave.png
@@ -115,7 +115,7 @@ To launch the agriculture simulation, run
 
 To customize Warthog's payload, for example to add additional sensors, see :ref:`customizepayload`.
 
-Once the simulation is running you can use rviz and other tools as described in :doc:`WarthogSimulation`
+Once the simulation is running you can use rviz and other tools as described in :doc:`Simulating`
 to control and monitor the robot.
 
 .. image:: images/agriculture_world.png
@@ -127,7 +127,7 @@ to control and monitor the robot.
 Customizing Warthog's Payload
 -------------------------------
 
-To customize Warthog's payload you must use the environment variables described in :doc:`WarthogPackages`.
+To customize Warthog's payload you must use the environment variables described in :doc:`CommonPackages`.
 
 You can add additional sensors by creating a customized URDF and setting the ``WARTHOG_URDF_EXTRAS`` environment
 variable to point to it.

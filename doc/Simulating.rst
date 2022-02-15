@@ -4,14 +4,11 @@ Simulating Warthog
 .. image:: images/warthog_simulation_banner.png
     :alt: Warthog Simulation
 
-Whether you actually have a Warthog robot or not, the Warthog simulator is a great way to get started with ROS
-robot development. In this tutorial, we will go through the basics of starting Gazebo and Rviz and how to drive
-your Warthog around.
+Whether you actually have a Warthog robot or not, the Warthog simulator is a great way to get started with ROS robot development. In this tutorial, we will go through the basics of starting Gazebo and rviz and how to drive your Warthog around.
 
 .. note::
 
-  Before you can use this tutorial, make sure you have :doc:`installed Warthog's software <WarthogInstallation>`
-
+  Before you can use this tutorial, make sure you have :doc:`installed Warthog's software <Installing>`
 
 Launch Gazebo
 -------------

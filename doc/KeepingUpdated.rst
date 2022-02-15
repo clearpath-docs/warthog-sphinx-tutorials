@@ -1,12 +1,9 @@
 Keeping Warthog Updated
 ==========================
 
-.. note:: If you are upgrading your Warthog from an older version of ROS, please refer to `our upgrade instructions here <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
-
 Warthog is always being improved, both its own software and the many community ROS packages upon which it
 depends! You can use the apt package management system to receive new versions all software running on the
 platform.
-
 
 Getting New Packages
 --------------------
@@ -46,7 +43,7 @@ Follow the below procedure to flash the firmware to Warthog's MCU:
 
 .. code-block:: bash
 
-    sudo apt-get install ros-melodic-warthog-firmware
+    sudo apt-get install ros-noetic-warthog-firmware
 
 3. Remove the top panel from the Warthog.  We recommend opening the panel to the left, as there are cables that run
    into the lid which can be strained.
@@ -94,7 +91,7 @@ Now run the following command to upload the firmware:
 
 .. code-block:: bash
 
-    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/melodic/share/warthog_firmware/mcu.bin
+    dfu-util -v -d 0483:df11 -a 0 -s 0x08000000 -D /opt/ros/noetic/share/warthog_firmware/mcu.bin
 
 You should see about 20 seconds worth of lines output beginning with "Download from image ...". When this is
 complete you may disconnect the PC from the MCU and power-cycle the robot.
@@ -141,4 +138,4 @@ __ robot_upstart_
 
     rosrun warthog_bringup install
 
-You can now configure Warthog to :doc:`connect to your wi-fi <WarthogNetwork>`.
+You can now configure Warthog to :doc:`connect to your wi-fi <Networking>`.

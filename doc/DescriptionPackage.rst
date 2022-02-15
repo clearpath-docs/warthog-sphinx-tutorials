@@ -1,19 +1,16 @@
-Configuration & Environment Variables
-=========================================
+Description Package
+====================
 
-.. image:: images/warthog_urdf_banner.png
+The ``warthog_description`` package provides a `URDF <http://wiki.ros.org/urdf>`_ model of Warthog. 
+
+Warthog's URDF model can be visualized in rviz. In terminal, run:
+
+.. code-block:: bash
+
+    roslaunch warthog_viz view_model.launch
+
+.. image:: images/warthog_urdf.png
     :alt: Warthog URDF
-
-The warthog_description package is the URDF robot description for Warthog UGV.
-
-.. _Source: https://github.com/warthog-cpr/warthog
-
-
-Overview
----------
-
-This package provides a `URDF <http://wiki.ros.org/urdf>`_ model of Warthog.  For an example launchfile to use in visualizing this model, see `warthog_viz <http://wiki.ros.org/warthog_viz>`_.
-
 
 Accessories
 ------------
