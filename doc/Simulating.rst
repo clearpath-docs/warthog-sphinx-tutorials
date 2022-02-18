@@ -20,7 +20,7 @@ approximations of its dynamics, including wheel slippage, skidding, and inertia.
 
     roslaunch warthog_gazebo warthog_world.launch
 
-You should see the following window appear, or something like it. You can adjust the camera angle by clicking and dragging while holding CTRL, ALT, or the shift key:
+You should see the following window appear, or something like it. You will see a base Warthog spawned with no additional sensors. You can adjust the camera angle by clicking and dragging while holding CTRL, ALT, or the shift key:
 
 .. image:: images/warthog_gazebo.png
     :alt: Simulated Warthog in the Race World.

@@ -8,7 +8,7 @@ There are three ways to drive Warthog, and each way will work on a physical Wart
 
 The first two ways are teleoperation using a remote controller, and manually through publishing ROS messages. These two ways are covered in this section.
 
-The third way is using the interactive controller in ``rviz``. This is covered in the :doc:`Simulation <Simulating>` section.
+The third way is using the interactive controller in rviz. This is covered in the :doc:`Simulation <Simulating>` section.
 
 Safety Precautions
 ----------------------
