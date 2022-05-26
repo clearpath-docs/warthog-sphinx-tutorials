@@ -58,14 +58,14 @@ This test:
 
 **Drive Test**
 
-The **Drive Test** drives the robot forward 1 meter and checks that the motors, encoders, and encoder-fused odometry are working properly.
+The **Drive Test** drives the robot forward 2 meters and checks that the motors, encoders, and encoder-fused odometry are working properly.
 
 This test:
 
-- Subscribes to the ``/warthog_velocity_controller/odom`` ROS topic to receive linear displacement estimations from the encoder-fused odometry. The robot will drive forward until 1 meter is estimated.
+- Subscribes to the ``/warthog_velocity_controller/odom`` ROS topic to receive linear displacement estimations from the encoder-fused odometry. The robot will drive forward until 2 meters is estimated.
 - Subscribes to the ``/joint_state`` ROS topic to receive linear displacement measurements from individual the encoders. These measurements are output as comparison to the linear displacement estimations from the encoder-fused odometry.
 - Publishes to the ``/cmd_vel`` ROS topic to send drive commands to drive the robot.
-- The user will be asked to verify that the robot drives forward 1 meter.
+- The user will be asked to verify that the robot drives forward 2 meters.
 
 CAN Bus Test
 -------------
