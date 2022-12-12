@@ -1,6 +1,10 @@
 Warthog UGV Tutorials
 ======================
 
+.. Warning::
+
+  These tutorials have been superceded. Find the latest Warthog tutorials at `docs.clearpathrobotics.com <https://docs.clearpathrobotics.com/docs/robots/warthog/tutorials_warthog>`_.
+
 .. image:: images/warthog_banner.png
     :alt: Warthog Robot
 
